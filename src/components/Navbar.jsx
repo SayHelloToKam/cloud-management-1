@@ -8,7 +8,7 @@ const Navbar = () => {
     const handleClick = () => setNav(!nav)
 
   return (
-    <div className='w-screen h-[80px] bg-zinc-200 fixed drop-shadow-lg'>
+    <div className='w-screen h-[80px] bg-zinc-200 fixed drop-shadow-lg px-8'>
       <div className='px-2 flex justify-between items-center w-full h-full'>
         <div className='flex items-center'>
           <h1 className='text-3xl font-bold mr-4 sm:text-4xl'>Brand.</h1>
@@ -26,7 +26,7 @@ const Navbar = () => {
           </button>
           <button className='px-8 py-3'>Sign Up</button>
         </div>
-        <div className='md:hidden' onClick={handleClick}>
+        <div className='md:hidden mr-4' onClick={handleClick}>
             {!nav ? <HiMenu className='w-6' /> : <HiOutlineX className='w-6' />}
           
         </div>
@@ -38,10 +38,9 @@ const Navbar = () => {
         <li className='border-b-2 border-zinc-300 w-full'>Platform</li>
         <li className='border-b-2 border-zinc-300 w-full'>Pricing</li>
         <li className='border-b-2 border-zinc-300 w-full'>Home</li>
+        
         <div className="flex flex-col my-4">
-          <button className='bg-transparent text-indigo-600 px-8 py-3 mb-4'>
-            Sign In
-          </button>
+          <button className='bg-transparent text-indigo-600 px-8 py-3 mb-4'>Sign In</button>
           <button className='px-8 py-3'>Sign Up</button>
         </div>
       </ul>
